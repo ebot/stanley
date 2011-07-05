@@ -1,0 +1,17 @@
+!!!
+%html
+  %head
+    %title Stanley's Summer Trips
+    = stylesheet_link_tag :all
+    = javascript_include_tag :defaults
+    = csrf_meta_tag
+  %body
+    .container_12
+      #header{ :class => 'grid_12' }
+        =image_tag 'stan_medium.png'
+        =image_tag 'title.png'
+      #content{ :class => 'grid_12' }
+        = yield
+      #footer{ :class => 'grid_12' } 
+        Copyright #{DateTime.now.strftime('%Y')} 
+        =link_to 'edbotz.us', 'http://edbotz.us'
