@@ -8,7 +8,7 @@ class ApplicationController < ActionController::Base
     pwd = ENV['PASSWORD'] || PASSWORD
 
     authenticate_or_request_with_http_basic do |username, password|
-      username == USER_ID && password == PASSWORD
+      username == uid && password == pwd
     end
   end
 end
