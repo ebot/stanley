@@ -1,9 +1,14 @@
 %p
-  = link_to t('All Pictures'), trips_path
-  = link_to t('Edit This Picture'), edit_trip_path(@trip)
+  = link_to t('View All of Stanley\'s Adventures'), trips_path
+  = ' | '
+  = link_to( t('Edit This Picture'), edit_trip_path(@trip) ) if logged_in?
+  = ' | '
+  = link_to( t('Delete This Picture'), trip_path(@trip), :method => :delete, :confirm => "Are you sure?" ) if logged_in?
 
 %div.polaroid
   = image_tag @trip.photo.url(:medium)
   %br
   = @trip.location
-= @trip.description
+#description
+  %p= @trip.description
+.clear

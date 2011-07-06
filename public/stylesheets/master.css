@@ -1,28 +1,52 @@
-@import url(reset.css);
-@import url(text.css);
+@import "http://fonts.googleapis.com/css?family=Architects+Daughter&v1";
 /* `Basic HTML
 ----------------------------------------------------------------------------------------------------*/
 body {
-  font-family: "Marker Felt";
-  background: #87AFC7;
-  background: url(/images/background.jpg) top left repeat;
-  color: #333;
-  text-align: center; }
+  margin: 25px;
+  padding: 0;
+  background-color: #e9dfb8;
+  color: #008e51;
+  font-size: 2em;
+  font-family: 'Architects Daughter', arial, serif;
+  line-height: .85em; }
+
+#page_top {
+  margin: 0;
+  padding: 0;
+  background: #e9dfb8 url(/images/paper_header.png); }
+
+#container {
+  padding: 5px;
+  background: url(/images/paper.png); }
 
 #header {
-  padding: 5px; }
+  text-align: center;
+  margin: 0 15px 5px 15px;
+  padding: 15px 5px 5px 5px;
+  border-bottom: dashed 3px #9c1112; }
 
 #content {
-  padding: 3px; }
+  padding: 28px 10px 10px 10px;
+  text-align: center; }
+
+#desciption {
+  float: right; }
 
 #footer {
-  font-size: 90%;
-  padding: 3px;
-  font-style: italic; }
+  font-size: 60%;
+  margin: 5px 15px 5px 15px;
+  padding-top: 10px;
+  text-align: center;
+  font-style: italic;
+  border-top: dashed 3px #9c1112; }
+
+.clear {
+  clear: both; }
 
 /* `Poloroid Effect from http://www.zurb.com/playground/css3-polaroids 
 ----------------------------------------------------------------------------------------------------*/
 .polaroid {
+  text-align: center;
   background: #fff;
   display: inline;
   float: left;
@@ -30,54 +54,45 @@ body {
   width: auto;
   padding: 10px 10px 15px;
   text-align: center;
-  font-family: "Marker Felt", sans-serif;
   text-decoration: none;
   color: #333;
-  font-size: 18px;
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
   -webkit-transform: rotate(-2deg);
   -webkit-transition: -webkit-transform .15s linear;
   -moz-transform: rotate(-2deg); }
-
-.polaroid img {
-  display: block;
-  width: 400px;
-  margin-bottom: 12px; }
+  .polaroid img {
+    display: block;
+    width: 400px;
+    margin: 0 auto 12px auto; }
 
 ul.polaroids {
-  width: 970px;
-  margin: 0 0 0 35px; }
-
-ul.polaroids li {
-  display: inline;
-  float: left; }
-
-ul.polaroids a {
-  background: #fff;
-  display: inline;
-  float: left;
-  margin: 0 0 27px 30px;
-  width: auto;
-  padding: 10px 10px 15px;
-  text-align: center;
-  font-family: "Marker Felt", sans-serif;
-  text-decoration: none;
-  color: #333;
-  font-size: 18px;
-  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
-  -webkit-transform: rotate(-2deg);
-  -webkit-transition: -webkit-transform .15s linear;
-  -moz-transform: rotate(-2deg); }
-
-ul.polaroids img {
-  display: block;
-  width: 200px;
-  margin-bottom: 12px; }
-
-ul.polaroids a:after {
-  content: attr(title); }
+  margin: 0; }
+  ul.polaroids li {
+    display: inline;
+    float: left; }
+  ul.polaroids a {
+    text-align: center;
+    background: #fff;
+    display: inline;
+    float: left;
+    margin: 0 0 27px 30px;
+    width: auto;
+    padding: 10px 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+    -webkit-transform: rotate(-2deg);
+    -webkit-transition: -webkit-transform .15s linear;
+    -moz-transform: rotate(-2deg); }
+  ul.polaroids img {
+    display: block;
+    width: 200px;
+    margin: 0 auto 12px auto; }
+  ul.polaroids a:after {
+    content: attr(title); }
 
 /* By default, we tilt all our images -2 degrees */
 ul.polaroids a {
@@ -115,15 +130,15 @@ ul.polaroids li:nth-child(11n) a {
   top: 3px;
   left: -5px; }
 
-/* Scale the images on hover, add transitions for smoothing things out, and ensure the hover appears on top */
-ul.polaroids a:hover {
-  -webkit-transform: scale(1.25);
-  -moz-transform: scale(1.25);
-  position: relative;
-  z-index: 5; }
-
 /* Add drop shadows and smooth out the transition (Safari only) */
 ul.polaroids a {
   -webkit-transition: -webkit-transform .15s linear;
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25); }
+
+/* Scale the images on hover, add transitions for smoothing things out, and ensure the hover appears on top */
+ul.polaroids li a:hover {
+  -webkit-transform: scale(1.15);
+  -moz-transform: scale(1.15);
+  position: relative;
+  z-index: 5; }

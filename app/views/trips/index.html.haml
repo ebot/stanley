@@ -1,7 +1,8 @@
-%p= link_to t('.new_trip'), new_trip_path
-
+%p
+  = link_to( t('.new_trip'), new_trip_path ) if logged_in?
 %ul.polaroids
   - for trip in @trips
     %li
       %a{ :href => trip_path( trip ), :title => trip.location }
         = image_tag trip.photo.url( :thumb )
+.clear

@@ -1,4 +1,6 @@
 class TripsController < ApplicationController
+  before_filter :authenticate, :except => [:index, :show]
+
   # GET /trips
   # GET /trips.xml
   def index
