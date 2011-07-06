@@ -9,8 +9,9 @@
     #page_top &nbsp;
     #container
       #header
-        =image_tag 'stan_medium.png'
-        =image_tag 'title.png'
+        %a{ :href => trips_path }
+          =image_tag 'stan_medium.png'
+          =image_tag 'title.png'
       #content
         = yield
       #footer 

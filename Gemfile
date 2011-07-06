@@ -7,7 +7,7 @@ gem 'haml'
 gem 'sass'
 gem 'paperclip'
 gem 'jquery-rails'
-gem 'rmagick'
+gem 'aws-s3'
 
 group :development, :test do
   gem 'rspec'

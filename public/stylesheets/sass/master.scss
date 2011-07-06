@@ -31,6 +31,10 @@ body {
   padding: 28px 10px 10px 10px;
   text-align: center; }
 
+.toolbar {
+  a { color: #281274; }
+  a:hover { color: #008e51; } }
+
 #desciption {
   float: right; }
 
@@ -72,6 +76,7 @@ ul.polaroids {
     display: inline; 
     float: left; }
   a {
+    font-size: 60%;
     text-align: center; 
     background: #fff; 
     display: inline; 
