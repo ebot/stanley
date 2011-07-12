@@ -9,6 +9,8 @@ body {
   font-size: 2em;
   font-family: 'Architects Daughter', arial, serif;
   line-height: .85em; }
+  body a img {
+    border: none; }
 
 #page_top {
   margin: 0;

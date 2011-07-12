@@ -10,7 +10,9 @@ body {
   color: #008e51;
   font-size: 2em;
   font-family: 'Architects Daughter', arial, serif;
-  line-height: .85em; }
+  line-height: .85em;
+  a {
+    img { border: none;} } }
 
 #page_top {
   margin: 0;
