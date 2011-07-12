@@ -74,7 +74,8 @@ body {
 
 ul.polaroids { 
   margin: 0;
-  li { 
+  li {
+    height: 350px; 
     display: inline; 
     float: left; }
   a {
