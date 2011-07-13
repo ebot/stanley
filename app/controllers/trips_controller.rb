@@ -1,5 +1,12 @@
 class TripsController < ApplicationController
-  before_filter :authenticate, :except => [:index, :show]
+  before_filter :authenticate, :except => [:index, :show, :feed]
+
+  def feed
+    @trips = Trip.all( :order => "id DESC", :limit => 20)
+    respond_to do |format|
+      format.xml
+    end 
+  end
 
   # GET /trips
   # GET /trips.xml
