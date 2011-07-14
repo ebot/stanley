@@ -11,7 +11,7 @@ class TripsController < ApplicationController
   # GET /favorites
   # GET /favorites.xml
   def favorites
-    @trips = Trip.where(:favorite => true)
+    @trips = Trip.where( :favorite => true ).order( :created_at )
 
     respond_to do |format|
       format.html # index.html.erb
@@ -22,7 +22,7 @@ class TripsController < ApplicationController
   # GET /trips
   # GET /trips.xml
   def index
-    @trips = Trip.all
+    @trips = Trip.order( 'created_at DESC' )
 
     respond_to do |format|
       format.html # index.html.erb
