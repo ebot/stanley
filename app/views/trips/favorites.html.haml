@@ -1,0 +1,13 @@
+#about
+  My name is Stan, and I had a blast traveling around the Philadelphia 
+  area with Kayla and Linsey.  These are a few of my favorite photos 
+  from our adventures.  You can see all of our adventures at 
+  %a{ :href => root_path } http://stanbotz.heroku.com
+%ul.favorites
+  - for trip in @trips
+    %li
+      .polaroid
+        %a{ :href => trip_path( trip ), :title => trip.location }
+          = image_tag trip.photo.url( :thumb )
+      .description= trip.description
+      .clear

@@ -8,6 +8,17 @@ class TripsController < ApplicationController
     end 
   end
 
+  # GET /favorites
+  # GET /favorites.xml
+  def favorites
+    @trips = Trip.where(:favorite => true)
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.xml  { render :xml => @trips }
+    end
+  end
+  
   # GET /trips
   # GET /trips.xml
   def index

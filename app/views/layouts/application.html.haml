@@ -2,6 +2,7 @@
 %html
   %head
     %title Stanley's Summer Trips
+    = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Architects+Daughter'
     = stylesheet_link_tag :all
     = javascript_include_tag :defaults
     = auto_discovery_link_tag :rss, "#{rss_path}.xml"
@@ -10,9 +11,13 @@
     #page_top &nbsp;
     #container
       #header
+        %div{ :class => 'triangle-border right' }
+          Be sure to check out my 
+          =link_to 'favorite pictures', favorites_path
         %a{ :href => trips_path }
           =image_tag 'stan_medium.png'
           =image_tag 'title.png'
+        .clear
       #content
         = yield
       #footer 
