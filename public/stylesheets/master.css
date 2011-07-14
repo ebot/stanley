@@ -183,7 +183,7 @@ table {
     content: attr(title); }
 
 .favorites .description {
-  width: 500px;
+  width: 60%;
   float: left;
   margin: 15px 0 0 50px; }
 .favorites img {
