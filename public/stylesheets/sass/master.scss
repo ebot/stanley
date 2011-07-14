@@ -1,3 +1,15 @@
+@font-face {
+    font-family: 'ArchitectsDaughterRegular';
+    src: url('/fonts/arch_daughter/ArchitectsDaughter-webfont.eot');
+    src: url('/fonts/arch_daughter/ArchitectsDaughter-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/arch_daughter/ArchitectsDaughter-webfont.woff') format('woff'),
+         url('/fonts/arch_daughter/ArchitectsDaughter-webfont.ttf') format('truetype'),
+         url('/fonts/arch_daughter/ArchitectsDaughter-webfont.svg#ArchitectsDaughterRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 /* `Basic HTML
 ----------------------------------------------------------------------------------------------------*/
 
@@ -6,11 +18,15 @@ body {
   padding:0;
   background-color: #e9dfb8;
   color: #008e51;
-  font-size: 2em;
-  font-family: 'Architects Daughter', arial, serif;
+  font-size: 1.5em;
+  font-family: 'ArchitectsDaughterRegular', arial, serif;
+  letter-spacing: 0;
   line-height: .85em;
   a {
-    img { border: none;} } }
+    color: #008e51;
+    
+    img { border: none;} }
+  a:hover { color: #E4E476; } }
 
 #page_top {
   margin: 0;
@@ -23,10 +39,13 @@ body {
 
 #header { 
   text-align: center;
-  margin: 0 15px 5px 15px;
+  margin: 0 10% 5px 10%;
   padding: 15px 5px 5px 5px;
   border-bottom: dashed 3px #9c1112;
-  a { color: #008e51 }
+  #speach_bubble {
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px; }
   img{
     margin-top: -4em; } }
 
@@ -78,7 +97,7 @@ table {
     font-size: 50%;
     position:relative;
     padding:15px;
-    margin:1em 0 3em 5em;
+    margin: 1em 0 3em -33em;
     border:5px solid #5a8f00;
     background:#fff;
     /* css3 */
@@ -196,7 +215,7 @@ table {
     list-style-type:none; } }
 
 /* Rotate all even images 2 degrees */
-ul.favorites li:nth-child(even) div {
+ul.favorites li:nth-child(even) .polaroid {
   -webkit-transform: rotate(5deg);
   -moz-transform: rotate(5deg); }
 
