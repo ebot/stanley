@@ -1,5 +1,5 @@
 class TripsController < ApplicationController
-  before_filter :authenticate, :except => [:index, :show, :feed]
+  before_filter :authenticate, :except => [:index, :show, :feed, :favorites]
 
   def feed
     @trips = Trip.all( :order => "id DESC", :limit => 20)
