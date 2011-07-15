@@ -68,11 +68,12 @@ body {
 #footer {
   font-family: 'EastMarketRegular', Arial, sans-serif;
   letter-spacing: 0;
-  font-size: 60%;
-  margin: 5px 15px 5px 15px;
+  font-size: 70%;
+  margin: 5px 15px 0 15px;
   padding-top: 10px;
-  text-align: center;
-  border-top: dashed 3px #9c1112; }
+  text-align: center; }
+  #footer a:hover {
+    color: #00BE6F; }
 
 .clear {
   clear: both; }
