@@ -86,6 +86,7 @@ table {
 /* ============================================================================================================================
 == BUBBLE WITH A BORDER AND TRIANGLE
 ** ============================================================================================================================ */
+/* Courtesy of Nicolas Gallagher - http://nicolasgallagher.com/pure-css-speech-bubbles/*/
 /* THE SPEECH BUBBLE
 ------------------------------------------------------------------------------------------------------------------------------- */
 .triangle-border {
@@ -161,7 +162,7 @@ table {
   border-width: 9px 0 9px 21px;
   border-color: transparent #fff; }
 
-/* `Poloroid Effect from http://www.zurb.com/playground/css3-polaroids 
+/* `Poloroid Effect courtesy of Mark Hayes at zurb - http://www.zurb.com/playground/css3-polaroids 
 ----------------------------------------------------------------------------------------------------*/
 .polaroid {
   text-align: center;
