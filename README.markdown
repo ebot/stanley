@@ -26,6 +26,16 @@ was able to add some cool effects to the site, most notably:
    [polaroid effect](http://www.zurb.com/article/305/easily-turn-your-images-into-polaroids-wi).
  * Nicolas Gallagher's post on css [speach bubbles](http://nicolasgallagher.com/pure-css-speech-bubbles/).
 
+Fonts
+-----
+
+The fonts are courtesy of the awesome 
+[font squirrel](http://www.fontsquirrel.com/).  I am useing these two 
+fonts:
+
+ * [Architects Daughter](http://www.fontsquirrel.com/fonts/architects-daughter)
+ * [EastMarket](http://www.fontsquirrel.com/fonts/EastMarket)
+
 Todos
 -----
 
