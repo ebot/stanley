@@ -3,6 +3,7 @@ Stan::Application.routes.draw do
 
   match 'rss' => 'trips#feed', :as => 'rss'
   match 'favorites' => 'trips#favorites', :as => 'favorites'
+  match 'movie' => 'trips#movie', :as => 'movie'
   
   root :to => "trips#index"  
 end
