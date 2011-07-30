@@ -92,6 +92,14 @@ table {
 #about {
   padding-bottom: 25px; }
 
+#movie iframe {
+  border: 5px solid #5a8f00;
+  padding: 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  margin: 10px; }
+
 /* ============================================================================================================================
 == BUBBLE WITH A BORDER AND TRIANGLE
 ** ============================================================================================================================ */
